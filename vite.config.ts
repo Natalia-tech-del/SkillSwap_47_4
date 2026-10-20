@@ -15,6 +15,7 @@ const dirname =
 // More info at: https://storybook.js.org/docs/next/writing-tests/integrations/vitest-addon
 export default defineConfig({
   plugins: [react(), svgr(), mockDevServerPlugin()],
+  base: '/SkillSwap_47_4/',
   server: {
     proxy: {
       '^/api': { target: 'http://localhost:5173' }, // Proxy setting triggers the mock
